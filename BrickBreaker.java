@@ -64,7 +64,7 @@ class MusicManager {
             if (clip != null && clip.isRunning()) {
                 return;
             }
-            File musicFile = new File("C:\\Users\\liopo\\Downloads\\Suno Music\\BrickBreakerMusic\\" + soundFileName);
+            File musicFile = new File("C:\\Users\\liopo\\Downloads\\Suno Music\\ProjectMusic\\BrickBreakerMusic\\" + soundFileName);
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(musicFile);
             clip = AudioSystem.getClip();
             clip.open(audioStream);
@@ -83,7 +83,7 @@ class MusicManager {
             if (soundEffectClip != null && soundEffectClip.isRunning()) {
                 return;
             }
-            File musicFile = new File("C:\\Users\\liopo\\Downloads\\Suno Music\\BrickBreakerMusic\\" + soundFileName);
+            File musicFile = new File("C:\\Users\\liopo\\Downloads\\Suno Music\\ProjectMusic\\BrickBreakerMusic\\" + soundFileName);
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(musicFile);
             soundEffectClip = AudioSystem.getClip();
             soundEffectClip.open(audioStream);
